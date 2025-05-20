@@ -1,0 +1,141 @@
+.uglass-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0056b3, #00264d);
+  padding: 2rem;
+}
+
+.uglass-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.uglass-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.glass-heading {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.glass-input-group {
+  margin-bottom: 1.5rem;
+}
+
+.glass-label {
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.glass-input {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #0088ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 136, 255, 0.2);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.skill-tag {
+  background: rgba(0, 123, 255, 0.3);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-remove {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.skill-remove:hover {
+  opacity: 1;
+}
+
+.profile-upload {
+  text-align: center;
+}
+
+.profile-preview {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.glass-button {
+  background: rgba(0, 123, 255, 0.6);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.glass-button:hover {
+  background: rgba(0, 123, 255, 0.8);
+  transform: translateY(-1px);
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .glass-form {
+    grid-template-columns: 1fr;
+  }
+
+  .glass-content {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,121 @@
+.nav_con {
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.navbar-brand {
+  display: flex;
+  font-size: 20pt;
+  background: linear-gradient(#642043 0%, #3d199f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  position: fixed;
+  top: 20px; /* push down a bit for better look */
+  left: 10%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.15); /* translucent white */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 16px; /* rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+  z-index: 1000;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
+.navbar_hidden {
+  transform: translateY(-100%); 
+}
+
+.navbar_visible {
+  transform: translateY(0); 
+}
+
+.nav_item_set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  width: 100%;
+}
+.nav_item_icon {
+  font-size: 35px;
+  color: #004c5d;
+  cursor: pointer;
+}
+.nav_item_icon_noty {
+  font-size: 35px;
+  color: #ff715b;
+  cursor: pointer;
+}
+.nav_bar_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav_item_icon:hover {
+  color: #ff715b;
+}
+.nav_nav_item:hover {
+  color: #ff715b;
+}
+.nav_nav_item_active {
+  font-size: 16px;
+  color: #ff715b !important; 
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative; 
+}
+
+.nav_nav_item_active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%; 
+  height: 2px; 
+  background-color: #FF715B;
+}
+
+.nav_nav_item {
+  font-size: 16px;
+  color: #004c5d;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+.nav_nav_item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 0;
+  height: 2px; 
+  background-color: #FF715B;
+  transition: width 0.3s ease;
+}
+
+.nav_nav_item:hover {
+  color: #FF715B;
+}
+
+.nav_nav_item:hover::after {
+  width: 100%; 
+}
